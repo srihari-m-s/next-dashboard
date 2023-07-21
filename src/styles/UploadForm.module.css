@@ -1,0 +1,160 @@
+.capitalized{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4em;
+}
+
+.visuallyHidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+  
+input.visuallyHidden:is(:hover, :focus, :focus-within) + label {
+    /* outline: thin dotted; */
+    cursor: pointer;
+}
+
+.inputArea{
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+}
+
+.selectFilesButton{
+    font-size: 1.25rem;
+    padding: .75em 1.5em;
+
+    background-color: rgb(255, 236, 229);
+    border-radius: 10rem;
+    border: 2px dotted orangered;
+}
+
+.selectFilesButton:hover{
+    color: white;
+    background-color: orangered;
+}
+
+.progressBar {
+    background-color: #fefefe;
+    border-radius: 10rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    height: 30px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.progress {
+    background: #ad5389;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right,rgb(255, 193, 170), orangered, red );
+    border-radius: 10rem;
+    height: 30px;
+    width: 0;
+    transition: width 0.5s ease-in;
+}
+
+.inputArea p{
+    width: 30ch;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.uploadIcon{
+    font-size: 1.75rem;
+    /* border: 1px solid black; */
+
+    display: flex;
+    align-self: center;
+}
+
+.uploadButton{
+    font-size: 1.25rem;
+    padding: .75em 1.5em;
+
+    background-color: rgb(255, 193, 170);
+    border-radius: 10rem;
+    border: 2px solid orangered;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5em;
+}
+
+.uploadButton:hover,
+.uploadButton:active{
+    color: white;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.uploadButton:active{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+.downloadButton{
+    font-size: 1.25rem;
+    padding: .75em 1.5em;
+    margin-top: 1.25em;
+
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid orangered;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5em;
+}
+
+.downloadButton:hover,
+.downloadButton:active{
+    cursor: pointer;
+}
+
+.downloadButton:active{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+.downloadIcon{
+    font-size: 1.5rem;
+    display: flex;
+    align-self: center;
+}
+
+.downloadButton p{
+    width: min(16ch, 30ch);
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.langSelection p{
+    font-size: 1rem;
+    margin-bottom: .5em;
+}
+
+.langSelect{
+    font-size: 1rem;
+    padding: .25em;
+}
